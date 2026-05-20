@@ -954,6 +954,10 @@
         justify-content: center;
       }
 
+      .actions-bar button .btn-text {
+        display: none !important;
+      }
+
       .actions-bar button svg {
         width: 18px !important;
         height: 18px !important;
@@ -1197,14 +1201,14 @@
         <svg viewBox="0 0 24 24" stroke="currentColor">
           <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        Resetar Rascunho
+        <span class="btn-text">Resetar Rascunho</span>
       </button>
       <button class="btn-action" onclick="downloadSVG()">
         <svg viewBox="0 0 24 24" stroke="currentColor">
           <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-        Exportar Arte Vector (.svg)
+        <span class="btn-text">Exportar Arte Vector (.svg)</span>
       </button>
     </div>
   </header>
