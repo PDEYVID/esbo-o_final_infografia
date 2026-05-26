@@ -1283,6 +1283,8 @@
 
       <!-- PAINEL 1: CONCEITO -->
       <div class="studio-panel" id="panel-conceito">
+
+        <!-- Narrativa -->
         <div class="studio-card">
           <div class="card-title">
             <svg viewBox="0 0 24 24">
@@ -1291,21 +1293,129 @@
             </svg>
             Sobre a Narrativa
           </div>
-          <p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-sub);">
-            Visualização poética baseada na correspondência de <b>Giorgia Lupi</b> e <b>Stefanie Posavec</b>.
-            Criamos uma metáfora onde a constância absoluta (<b>1.180 dias de medicação continuada</b>) serve como
-            alicerce rígido, enquanto as emoções diárias flutuam e dançam sobre esse fundo, provando que <i>"tomo
-              remédio todos os dias e ainda assim cada dia é diferente por dentro."</i>
+          <p style="font-size: 0.82rem; line-height: 1.7; color: var(--text-sub);">
+            Diário digital de dados pessoais inspirado na correspondência de <b>Giorgia Lupi</b> e <b>Stefanie Posavec</b>.
+            A constância absoluta (<b>1.180+ dias de medicação contínua desde janeiro de 2022</b>) serve como alicerce
+            rígido, enquanto as emoções diárias flutuam e dançam sobre esse fundo —
+            <i>"tomo remédio todos os dias e ainda assim cada dia é diferente por dentro."</i>
           </p>
           <div style="margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap;">
-            <span
-              style="background: rgba(74, 122, 56, 0.15); color: #8bb87a; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 0.5px solid rgba(74,122,56,0.3)">Manaus
-              - AM</span>
-            <span
-              style="background: rgba(212, 163, 115, 0.15); color: var(--accent); font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 0.5px solid var(--accent-glow)">Jornalismo
-              de Dados</span>
+            <span style="background: rgba(74,122,56,0.15); color: #8bb87a; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 0.5px solid rgba(74,122,56,0.3)">Manaus · AM</span>
+            <span style="background: rgba(212,163,115,0.15); color: var(--accent); font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 0.5px solid var(--accent-glow)">Jornalismo de Dados</span>
+            <span style="background: rgba(100,130,200,0.12); color: #8aabdd; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; border: 0.5px solid rgba(100,130,200,0.3)">Diário Digital</span>
           </div>
         </div>
+
+        <!-- Como Ler -->
+        <div class="studio-card" style="margin-top: 12px;">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg>
+            Como Ler o Infográfico
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 4px;">
+
+            <!-- Tamanho -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 5px; flex-shrink: 0;">
+                <svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="var(--text-mute)" stroke-width="1.5"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none" stroke="var(--text-mute)" stroke-width="1.5"/></svg>
+                <svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--text-mute)" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Tamanho do círculo = Energia do dia</p>
+                <p style="font-size: 0.72rem; color: var(--text-mute); margin: 2px 0 0;">Escala de 1 (menor) a 5 (maior) — coletada diariamente</p>
+              </div>
+            </div>
+
+            <!-- Metades -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="flex-shrink: 0; width: 50px; height: 26px; border-radius: 4px; background: linear-gradient(to right, #f4b8c1 50%, #9fc5b0 50%); border: 0.5px solid var(--border-soft);"></div>
+              <div>
+                <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Metade esquerda = Manhã · Metade direita = Noite</p>
+                <p style="font-size: 0.72rem; color: var(--text-mute); margin: 2px 0 0;">A cor do dia divide o círculo em dois sentimentos</p>
+              </div>
+            </div>
+
+            <!-- Borda tracejada -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="flex-shrink:0;">
+                <circle cx="15" cy="15" r="12" fill="none" stroke="var(--text-mute)" stroke-width="1.5" stroke-dasharray="3 2"/>
+              </svg>
+              <div>
+                <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Borda tracejada = Tomou os remédios</p>
+                <p style="font-size: 0.72rem; color: var(--text-mute); margin: 2px 0 0;">Pregabalina + Antidepressivo — registrado a cada dia</p>
+              </div>
+            </div>
+
+            <!-- Âncora trabalho -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="flex-shrink:0;">
+                <circle cx="15" cy="15" r="5" fill="#2b4c2b"/>
+              </svg>
+              <div>
+                <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Ponto central sólido = Foi ao trabalho</p>
+                <p style="font-size: 0.72rem; color: var(--text-mute); margin: 2px 0 0;">Ponto central vazio (só borda) = Folga ou fim de semana</p>
+              </div>
+            </div>
+
+            <!-- Linha de evento -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="flex-shrink:0;">
+                <line x1="8" y1="22" x2="22" y2="8" stroke="var(--text-mute)" stroke-width="1.2"/>
+                <circle cx="22" cy="8" r="2.5" fill="#d4a373" stroke="var(--text-mute)" stroke-width="0.8"/>
+              </svg>
+              <div>
+                <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Linha = Evento do dia</p>
+                <p style="font-size: 0.72rem; color: var(--text-mute); margin: 2px 0 0;">Comprimento da linha = impacto do evento (curto / médio / longo)</p>
+              </div>
+            </div>
+
+            <!-- Cor -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 30px; height: 20px; border-radius: 4px; background: linear-gradient(135deg, #f4b8c1, #e57373, #81c784, #bdbdbd, #fff176, #212121, #ffb74d, #ffffff); flex-shrink:0; border: 0.5px solid var(--border-soft);"></div>
+              <div>
+                <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Cor do círculo = Cor subjetiva do dia</p>
+                <p style="font-size: 0.72rem; color: var(--text-mute); margin: 2px 0 0;">Definida pela autora para representar o tom emocional geral</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dados Técnicos -->
+        <div class="studio-card" style="margin-top: 12px;">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+            Dados Coletados
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px;">
+            <div style="background: var(--bg-studio); border: 0.5px solid var(--border-soft); border-radius: 8px; padding: 10px;">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); margin: 0 0 4px;">Período</p>
+              <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">16 a 23 de maio de 2026</p>
+            </div>
+            <div style="background: var(--bg-studio); border: 0.5px solid var(--border-soft); border-radius: 8px; padding: 10px;">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); margin: 0 0 4px;">Medicação</p>
+              <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Pregabalina + Antidep.</p>
+            </div>
+            <div style="background: var(--bg-studio); border: 0.5px solid var(--border-soft); border-radius: 8px; padding: 10px;">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); margin: 0 0 4px;">Campos coletados</p>
+              <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">8 variáveis por dia</p>
+            </div>
+            <div style="background: var(--bg-studio); border: 0.5px solid var(--border-soft); border-radius: 8px; padding: 10px;">
+              <p style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-mute); margin: 0 0 4px;">Referência</p>
+              <p style="font-size: 0.78rem; font-weight: 700; color: var(--text-main); margin: 0;">Dear Data (Lupi & Posavec)</p>
+            </div>
+          </div>
+          <p style="font-size: 0.7rem; color: var(--text-mute); margin-top: 10px; line-height: 1.5;">
+            Variáveis: <b>data · tomou remédios · palavra da manhã · energia (1–5) · trabalho · palavra da noite · evento · cor do dia</b>
+          </p>
+        </div>
+
       </div>
 
       <!-- PAINEL 2: DIÁRIO DE COLETA -->
