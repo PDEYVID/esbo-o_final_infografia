@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const fs = require\\('fs'\\); const html = fs.readFileSync\\('esboço_final_infografia.html', 'utf8'\\); console.log\\('File size:', html.length, 'chars'\\); const scripts = \\(html.match\\(/<script/g\\)||[]\\).length; const scriptClose = \\(html.match\\(/<\\\\/script>/g\\)||[]\\).length; console.log\\('Script tags open/close:', scripts, '/', scriptClose\\); const divOpen = \\(html.match\\(/<div/g\\)||[]\\).length; const divClose = \\(html.match\\(/<\\\\/div>/g\\)||[]\\).length; console.log\\('Div open/close:', divOpen, '/', divClose\\);\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
