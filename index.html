@@ -1211,7 +1211,7 @@
     <div class="actions-bar">
       <button class="btn-action-sec" onclick="resetDefaultData()">
         <svg viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
         <span class="btn-text">Resetar Rascunho</span>
       </button>
@@ -1338,7 +1338,7 @@
           <!-- BOTÃO PARA ADICIONAR NOVO DIA -->
           <button class="btn-action" style="width: 100%; margin-bottom: 1.25rem; background: var(--accent-gradient); color: var(--bg-studio); font-weight: 700; display: flex; justify-content: center; align-items: center; gap: 8px; font-family: var(--font-sans); border-radius: 8px; border: none; cursor: pointer; padding: 0.75rem 1rem;" onclick="addNewDay()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:16px; height:16px;"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            + Adicionar Novo Registro Diário
+            Adicionar Novo Registro Diário
           </button>
 
           <div class="days-accordion" id="accordionContainer">
@@ -1591,7 +1591,7 @@
     }
 
     function resetDefaultData() {
-      if (confirm("Quer realmente resetar e restaurar a coleta original de exemplo de sua amiga?")) {
+      if (confirm("Quer realmente resetar e restaurar os dados originais da semana?")) {
         daysData = JSON.parse(JSON.stringify(defaultDays));
         saveWorkspace();
         buildAccordion();
@@ -2223,9 +2223,18 @@
       cap1.textContent = "ENERGIA DO DIA (TAMANHO)";
       leg1.appendChild(cap1);
 
+      const energySubtitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      energySubtitle.setAttribute("x", "0");
+      energySubtitle.setAttribute("y", "9");
+      energySubtitle.setAttribute("class", "font-body");
+      energySubtitle.setAttribute("font-size", "6.5px");
+      energySubtitle.setAttribute("fill", "#a89f94");
+      energySubtitle.textContent = "diário digital — escala 1 (menor) a 5 (maior)";
+      leg1.appendChild(energySubtitle);
+
       const c1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       c1.setAttribute("cx", "10");
-      c1.setAttribute("cy", "20");
+      c1.setAttribute("cy", "26");
       c1.setAttribute("r", "6");
       c1.setAttribute("fill", "none");
       c1.setAttribute("stroke", "#7e756c");
@@ -2234,7 +2243,7 @@
 
       const tC1 = document.createElementNS("http://www.w3.org/2000/svg", "text");
       tC1.setAttribute("x", "22");
-      tC1.setAttribute("y", "23");
+      tC1.setAttribute("y", "29");
       tC1.setAttribute("class", "font-body");
       tC1.setAttribute("font-size", "7.5px");
       tC1.setAttribute("fill", "#7e756c");
@@ -2243,7 +2252,7 @@
 
       const c2 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       c2.setAttribute("cx", "80");
-      c2.setAttribute("cy", "20");
+      c2.setAttribute("cy", "26");
       c2.setAttribute("r", "12");
       c2.setAttribute("fill", "none");
       c2.setAttribute("stroke", "#7e756c");
@@ -2252,7 +2261,7 @@
 
       const tC2 = document.createElementNS("http://www.w3.org/2000/svg", "text");
       tC2.setAttribute("x", "98");
-      tC2.setAttribute("y", "23");
+      tC2.setAttribute("y", "29");
       tC2.setAttribute("class", "font-body");
       tC2.setAttribute("font-size", "7.5px");
       tC2.setAttribute("fill", "#7e756c");
